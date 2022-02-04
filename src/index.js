@@ -1,7 +1,5 @@
-/**
- * This file is just a silly example to show everything working in the browser.
- * When you're ready to start on your site, clear the file. Happy hacking!
- **/
+import { resgisterImage } from "./lazy";
+
 const maximum = 122;
 const minimum = 1;
 const random = 
@@ -26,6 +24,7 @@ const addButton = document.querySelector('button')
 const addImage = () => {
     const newImage = createImageNode();
     mountNode. append(newImage);
-}
+resgisterImage(newImage);
+};
 
 addButton.addEventListener("click", addImage);
